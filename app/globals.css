@@ -1,0 +1,134 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Institutional Color Palette for Polda Jawa Tengah */
+  --primary-dark-blue: #0B2C4D;
+  --accent-gold: #C9A24D;
+  --background-white: #FFFFFF;
+  --support-light-gray: #F2F2F2;
+  --text-dark: #1a1a1a;
+  --text-light: #666666;
+  
+  /* Design Tokens */
+  --background: #FFFFFF;
+  --foreground: #1a1a1a;
+  --card: #FFFFFF;
+  --card-foreground: #1a1a1a;
+  --popover: #FFFFFF;
+  --popover-foreground: #1a1a1a;
+  --primary: #0B2C4D;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F2F2F2;
+  --secondary-foreground: #0B2C4D;
+  --muted: #F2F2F2;
+  --muted-foreground: #666666;
+  --accent: #C9A24D;
+  --accent-foreground: #0B2C4D;
+  --destructive: #dc2626;
+  --destructive-foreground: #FFFFFF;
+  --border: #e5e5e5;
+  --input: #FFFFFF;
+  --ring: #0B2C4D;
+  --chart-1: #0B2C4D;
+  --chart-2: #C9A24D;
+  --chart-3: #667eea;
+  --chart-4: #764ba2;
+  --chart-5: #f093fb;
+  --radius: 0.5rem;
+  --sidebar: #0B2C4D;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #FFFFFF;
+  --sidebar-primary-foreground: #0B2C4D;
+  --sidebar-accent: #C9A24D;
+  --sidebar-accent-foreground: #0B2C4D;
+  --sidebar-border: #1a3a52;
+  --sidebar-ring: #C9A24D;
+}
+
+.dark {
+  --background: #0a1929;
+  --foreground: #FFFFFF;
+  --card: #132f4c;
+  --card-foreground: #FFFFFF;
+  --popover: #132f4c;
+  --popover-foreground: #FFFFFF;
+  --primary: #C9A24D;
+  --primary-foreground: #0B2C4D;
+  --secondary: #132f4c;
+  --secondary-foreground: #FFFFFF;
+  --muted: #1a3a52;
+  --muted-foreground: #a0a0a0;
+  --accent: #C9A24D;
+  --accent-foreground: #0B2C4D;
+  --destructive: #ef4444;
+  --destructive-foreground: #0B2C4D;
+  --border: #1a3a52;
+  --input: #132f4c;
+  --ring: #C9A24D;
+  --chart-1: #C9A24D;
+  --chart-2: #0B2C4D;
+  --chart-3: #93c5fd;
+  --chart-4: #c084fc;
+  --chart-5: #f472b6;
+  --sidebar: #0B2C4D;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #C9A24D;
+  --sidebar-primary-foreground: #0B2C4D;
+  --sidebar-accent: #C9A24D;
+  --sidebar-accent-foreground: #0B2C4D;
+  --sidebar-border: #1a3a52;
+  --sidebar-ring: #C9A24D;
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
